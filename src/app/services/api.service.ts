@@ -39,4 +39,10 @@ export class ApiService {
    return this.personajes$();
  })
 
+ public getPersonajeById(id: number) {
+  return  this.http.get<Personaje>(`https://rickandmortyapi.com/api/character/${id}`)
+   
+  
+}
+
 }

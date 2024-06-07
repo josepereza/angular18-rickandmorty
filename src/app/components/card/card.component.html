@@ -1,13 +1,23 @@
-<div class="Card" >
-    <!-- <img [srcset]="personaje.image" width="100%" class="img-fluid" alt="..."> -->
-    <img [srcset]="personaje().image" width="100%" class="img-fluid" alt="...">
+<div class="Card">
+  <!-- <img [srcset]="personaje.image" width="100%" class="img-fluid" alt="..."> -->
+  <img [srcset]="personaje().image" width="100%" class="img-fluid" alt="..." />
 
-    <div class="card-body">
-      <h5 class="card-title">{{personaje().name}}</h5>
-      <span class="badge text-bg-primary">Status : {{personaje().status}}</span>
-      <br>
-      <span class="badge text-bg-primary">Status : {{personaje().species}}</span>
+  <div class="card-body">
+    <h5 class="card-title">{{ personaje().name }}</h5>
 
-     
+    <div class="container d-flex justify-content-around">
+      <div class="badges">
+        <span class="badge text-bg-primary"
+          >Status : {{ personaje().status }}</span
+        >
+        <br />
+        <span class="badge text-bg-primary"
+          >Status : {{ personaje().species }}</span
+        >
+      </div>
+      <div class="boton">
+       <a class="btn btn-primary" [routerLink]="['/detalles',personaje().id]" routerLinkActive="router-link-active"  >Detalles</a>
+      </div>
     </div>
   </div>
+</div>

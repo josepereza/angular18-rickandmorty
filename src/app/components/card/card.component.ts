@@ -1,12 +1,13 @@
 import { Component, Input, input } from '@angular/core';
 import { Personaje } from '../../interfaces/i-rickandmorty';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.css'
+  styleUrl: './card.component.css',
 })
 export class CardComponent {
   //@Input({ required: true })personaje!:Personaje
@@ -15,5 +16,4 @@ export class CardComponent {
   //en el template habria que imprimirlo como signal: Ej: personaje().image
 
   personaje = input.required<Personaje>(); // InputSignal<string>
-
 }
