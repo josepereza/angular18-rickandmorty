@@ -1,0 +1,13 @@
+<div class="Card" >
+    <!-- <img [srcset]="personaje.image" width="100%" class="img-fluid" alt="..."> -->
+    <img [srcset]="personaje().image" width="100%" class="img-fluid" alt="...">
+
+    <div class="card-body">
+      <h5 class="card-title">{{personaje().name}}</h5>
+      <span class="badge text-bg-primary">Status : {{personaje().status}}</span>
+      <br>
+      <span class="badge text-bg-primary">Status : {{personaje().species}}</span>
+
+     
+    </div>
+  </div>

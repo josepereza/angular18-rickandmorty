@@ -1,0 +1,13 @@
+.Card {
+   
+    background-color: bisque;
+    box-shadow: 20px;
+    -webkit-box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.58);
+-moz-box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.58);
+box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.58);
+border-radius: 27px 27px 27px 27px;
+-moz-border-radius: 27px 27px 27px 27px;
+-webkit-border-radius: 27px 27px 27px 27px;
+border: 2px groove #000000;
+padding:8px;
+}

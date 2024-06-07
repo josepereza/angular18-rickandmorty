@@ -1,0 +1,5 @@
+<div class="listado">
+    @for (item of apiService.listFiltered(); track item.id) {
+   <app-card [personaje]="item"></app-card>
+    }
+</div>
