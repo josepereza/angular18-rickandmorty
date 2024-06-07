@@ -15,7 +15,7 @@ import { debounceTime, distinctUntilChanged } from 'rxjs';
 export class NavbarComponent {
   service=inject(ApiService)
 
-  search = new FormControl('');
+  search = new FormControl(' ', {nonNullable: true});
   ngOnInit(): void {
     
     this.search.valueChanges.pipe(debounceTime(500),distinctUntilChanged()).
