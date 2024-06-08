@@ -2,11 +2,12 @@ import { Component, Injector, OnInit, Signal, inject, input } from '@angular/cor
 import { ApiService } from '../../services/api.service';
 import { Personaje } from '../../interfaces/i-rickandmorty';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './details.component.html',
   styleUrl: './details.component.css'
 })
